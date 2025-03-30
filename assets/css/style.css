@@ -5,6 +5,15 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Evita selección de texto y resaltado en móviles */
+body, a, button, input, div {
+    -webkit-touch-callout: none;  /* iOS Safari */
+    -webkit-user-select: none;    /* Chrome/Safari/Opera */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE/Edge */
+    user-select: none;            /* Bloquea selección de texto */
+    -webkit-tap-highlight-color: transparent; /* Elimina resaltado azul/morado en móviles */
+}
 /*NavBar Design*/
 .navbar {
     padding: 10px;
@@ -27,6 +36,7 @@ body {
 
 .nav-links li {
     padding: 0px 10px;
+    transition: color 0.1s ease;
 }
 
 .nav-links li:hover {
@@ -66,48 +76,88 @@ body {
     padding: 20px;
 }
 
+.contain ul{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contain li {
+    padding: 0px 10px;
+    font-size: small;
+}
+
 .contain p {
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 1%;
     font-size: smaller;
     text-align: center;
 }
 
 .contain img {
     width: 65%;
-    padding-bottom: 5px;
 }
 
 /*Buttons on the start*/
 .contain_btn {
     display: flex;
+    justify-content: center;
     padding: 1.5vh;
 }
 
+/*Boton Play*/
 .principal_btn {
-    display: flex;
-    justify-content: right;
-    padding: 10px 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 8px 30px;
     margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.principal_btn button {
-    display: inline;
+.principal_btn a {
+    white-space: nowrap;
+}
+
+.principal_btn img {
+    width: 25px;
+    margin-right: 8px;
 }
 
 #info {
     background-color: #545454;
-    display: flex;
+    transition: background-color 0.2s ease;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
     color: white;
-    
 }
 
-#info img {
-    display: flex;
+#info:hover {
+    background-color: #252525;
+}
+
+#info:active {
+    background-color: #000;
+}
+
+#play {
+    background-color: #ffffff;
+    color: #000;
+    transition: background-color 0.2s ease;
     justify-content: center;
     align-items: center;
-    height: 30px
+    font-weight: bold;
+}
+
+#play:hover {
+    background-color: #bbbbbb;
+}
+
+#play:active {
+    background-color: #757575;
 }
