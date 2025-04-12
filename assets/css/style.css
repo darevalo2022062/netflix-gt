@@ -6,14 +6,25 @@ body {
 }
 
 /* Evita selección de texto y resaltado en móviles */
-body, a, button, input, div {
-    -webkit-touch-callout: none;  /* iOS Safari */
-    -webkit-user-select: none;    /* Chrome/Safari/Opera */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE/Edge */
-    user-select: none;            /* Bloquea selección de texto */
-    -webkit-tap-highlight-color: transparent; /* Elimina resaltado azul/morado en móviles */
+body,
+a,
+button,
+input,
+div {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Bloquea selección de texto */
+    -webkit-tap-highlight-color: transparent;
+    /* Elimina resaltado azul/morado en móviles */
 }
+
 /*NavBar Design*/
 .navbar {
     padding: 10px;
@@ -76,7 +87,7 @@ body, a, button, input, div {
     padding: 20px;
 }
 
-.contain ul{
+.contain ul {
     padding-left: 20%;
     padding-right: 20%;
     display: flex;
@@ -98,8 +109,40 @@ body, a, button, input, div {
 }
 
 .contain img {
-    width: 65%;
+    width: 80%;
 }
+
+@media (min-width: 768px) {
+
+    /*navbar*/
+    .nav-links {
+        font-size: larger;
+    }
+
+    /*logo*/
+    .logo img {
+        height: 100px;
+    }
+
+    /*Background & Fade*/
+    .background {
+        height: 70vh;
+        text-align: left;
+    }
+
+    /*Contain*/
+    .contain {
+        display: grid;
+        place-items: center;
+        padding-left: 20%;
+    }
+
+
+    .contain img {
+        width: 85%;
+    }
+}
+
 
 /*Buttons on the start*/
 .contain_btn {
@@ -161,3 +204,5 @@ body, a, button, input, div {
 #play:active {
     background-color: #757575;
 }
+
+/*Desing for Desktops*/
