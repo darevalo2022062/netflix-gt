@@ -5,24 +5,17 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* Evita selección de texto y resaltado en móviles */
 body,
 a,
 button,
 input,
 div {
     -webkit-touch-callout: none;
-    /* iOS Safari */
     -webkit-user-select: none;
-    /* Chrome/Safari/Opera */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* IE/Edge */
     user-select: none;
-    /* Bloquea selección de texto */
     -webkit-tap-highlight-color: transparent;
-    /* Elimina resaltado azul/morado en móviles */
 }
 
 /*NavBar Design*/
@@ -88,7 +81,7 @@ div {
 }
 
 .contain ul {
-    padding-left: 20%;
+    padding-left: 25%;
     padding-right: 20%;
     display: flex;
     justify-content: center;
@@ -134,7 +127,7 @@ div {
     .contain {
         display: grid;
         place-items: center;
-        padding-left: 20%;
+        padding-left: 15%;
     }
 
 

@@ -1,0 +1,77 @@
+/*Style.css*/
+/*BODY*/
+body {
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+a,
+button,
+input,
+div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.movies{
+}
+
+.title{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.title h1{
+    margin-left: 10vw;
+    margin-bottom: 3vw;
+    font-size: larger;
+}
+
+#gt-text{
+    margin-left: 1vh; 
+    margin-bottom: 3vw;
+    color: #48a7e3;
+    font-size: larger;
+}
+
+.line{
+    width: 100vw;
+    margin: 5% 2%;
+    height: 0.1vw;
+    background-image: linear-gradient(to right,#ffffff 30%, #000 70%);
+}
+
+/*ESTILOS PARA EL CATALOGO*/
+
+
+.catalog{
+    margin-left: 2%;
+    margin-right: 2%;
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.item-container img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .catalog { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .catalog { 
+        margin-left: 5vw;
+        margin-right: 5vw; 
+        gap: 2rem;
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
