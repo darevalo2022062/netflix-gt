@@ -60,7 +60,7 @@ div {
 .slide-container img {
     flex: 0 0 20%;
     cursor:pointer;
-    width: auto;
+    width: 100%;
     margin: 1% 1%;
     scroll-snap-align: center;
 }
