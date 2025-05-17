@@ -58,14 +58,12 @@ div {
 }
   
 .slide-container img {
-    flex: 0 0 20%;
+    flex: 0 0 30%;
     cursor:pointer;
     width: 100%;
     margin: 1% 1%;
     scroll-snap-align: center;
 }
-
-  
 
 /*ESTILOS PARA EL CATALOGO*/
 .catalog{
@@ -73,7 +71,7 @@ div {
     margin-right: 2%;
     display:grid;
     gap: 1rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 
 .item-container img {
@@ -89,7 +87,7 @@ div {
         margin-left: 5vw;
         margin-right: 5vw; 
         gap: 2rem;
-        grid-template-columns: repeat(5, 1fr); 
+        grid-template-columns: repeat(6, 1fr); 
     }
 
     .slide-container {
@@ -97,4 +95,6 @@ div {
         margin-left: 5vw;
         margin-right: 5vw; 
     }
+
+
 }
