@@ -43,6 +43,11 @@ div {
     transition: color 0.1s ease;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-links li:hover {
     color: #969696;
     font-style: unset;
@@ -137,14 +142,12 @@ div {
 }
 
 
-/*Buttons on the start*/
 .contain_btn {
     display: flex;
     justify-content: center;
     padding: 1.5vh;
 }
 
-/*Boton Play*/
 .principal_btn span {
     white-space: nowrap;
     color: inherit; 
@@ -171,7 +174,6 @@ div {
     margin-right: 8px;
 }
 
-/* Fijar el footer al final de la página*/
 .footer-space{
     position: fixed;
     display: flex;
@@ -188,7 +190,7 @@ div {
 }
 
 .icon {
-    margin-top: 0.5%;
+    margin-top: 1.5%;
     transform: scale(1); 
     transition: transform 0.2s  ease, filter 0.2s ease;
     filter: brightness(1); 
@@ -248,6 +250,7 @@ div {
 
     .icon{
         display: grid;
+        margin-top: 0.5%;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
