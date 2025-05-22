@@ -1,19 +1,17 @@
+/* Estilos Base */
 body {
     background-color: #000;
     font-family: "Poppins", sans-serif;
     margin: 0;
+    color: white;
 }
 
+/* Video Background */
 .background-vid {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Ocupa toda la altura de la pantalla */
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .background-vid::before {
@@ -24,15 +22,14 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 1) 0%,
-            rgba(0, 0, 0, 0.3) 15%,
-            rgba(0, 0, 0, 0.1) 30%,
-            rgba(0, 0, 0, 0.1) 70%,
-            rgba(0, 0, 0, 0.3) 85%,
-            rgba(0, 0, 0, 1) 100%);
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.3) 15%,
+        rgba(0, 0, 0, 0.1) 30%,
+        rgba(0, 0, 0, 0.1) 70%,
+        rgba(0, 0, 0, 0.3) 85%,
+        rgba(0, 0, 0, 1) 100%);
     z-index: 1;
     pointer-events: none;
-    /* Permite interacción con el video */
 }
 
 .background-vid video {
@@ -40,7 +37,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
     z-index: 0;
 }
@@ -48,39 +45,160 @@ body {
 .nav-bar-in {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 9vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 3;
 }
 
 .content {
     position: relative;
     z-index: 2;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    max-width: 90%;
+    padding: 0 20px;
 }
 
-/* Media Query para pantallas más grandes */
+.content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.conent-by-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: -100px;
+    margin-left: 2%;
+}
+
+.tittle-by-moby h1 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.more-details {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.more-details h2, .more-details h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.more-details h2 {
+    color: #46d369;
+}
+
+.buttons-by-movie {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.description-by-movie p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.minor {
+    color: #a3a3a3;
+    font-size: 12px !important;
+}
+
+.other-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.options p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.movie-section {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h1 {
+    font-size: 18px;
+    margin: 0 10px 0 0;
+}
+.movies-in{
+    margin-bottom: 25%;
+}
+
 @media (min-width: 768px) {
-    .background {
-        height: 60vh;
+    .background-vid {
+        height: 70vh;
     }
-
-    .nav-bar-in {
-        height: 13vh;
-    }
-
-    .background::before {
+    
+    .background-vid::before {
         background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 1) 0%,
-                rgba(0, 0, 0, 0) 20%,
-                rgba(0, 0, 0, 0) 80%,
-                rgba(0, 0, 0, 1) 100%);
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 20%,
+            rgba(0, 0, 0, 0) 80%,
+            rgba(0, 0, 0, 1) 100%);
     }
+    
+  
+    .movies-in{
+        margin-bottom: 5%;
+    }
+    
+    .content {
+        margin-top: -150px;
+
+    }
+    
+    .tittle-by-moby h1 {
+        font-size: 32px;
+    }
+    
+    .other-options {
+        margin-right: 75%;
+        justify-content: space-between;
+    }
+    
+    .description-by-movie p {
+        font-size: 16px;
+        margin-right: 50%;
+    }
+    
+    .minor {
+        font-size: 16px !important;
+    }
+    
+    .options p {
+        font-size: 12px;
+    }
+    
+    .section-header h1 {
+        font-size: 22px;
+    }
+    
+    .movie-slider img {
+        width: 160px;
+        height: 240px;
+    }
+    
 }
