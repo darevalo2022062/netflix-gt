@@ -122,6 +122,10 @@ body {
     align-items: center;
     gap: 5px;
 }
+.other-options img {
+    width: 30px;
+    height: 30px;
+}
 
 .options p {
     font-size: 10px;
@@ -168,6 +172,10 @@ body {
     .content {
         margin-top: -150px;
 
+    }
+    
+    .conent-by-movie{
+        margin-left: 5%;
     }
     
     .tittle-by-moby h1 {
