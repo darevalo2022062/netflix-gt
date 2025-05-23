@@ -110,38 +110,6 @@ div {
     width: 80%;
 }
 
-@media (min-width: 768px) {
-
-    /*navbar*/
-    .nav-links {
-        font-size: larger;
-    }
-
-    /*logo*/
-    .logo img {
-        height: 100px;
-    }
-
-    /*Background & Fade*/
-    .background {
-        height: 70vh;
-        text-align: left;
-    }
-
-    /*Contain*/
-    .contain {
-        display: grid;
-        place-items: center;
-        padding-left: 15%;
-    }
-
-
-    .contain img {
-        width: 85%;
-    }
-}
-
-
 .contain_btn {
     display: flex;
     justify-content: center;
@@ -256,5 +224,34 @@ div {
         justify-items: center;
         align-items: center;
 
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    /*navbar*/
+    .nav-links {
+        font-size: larger;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .background {
+        height: 70vh;
+        text-align: left;
+    }
+
+    .contain {
+        display: grid;
+        place-items: center;
+        padding-left: 15%;
+    }
+
+
+    .contain img {
+        width: 85%;
     }
 }

@@ -71,11 +71,45 @@ div {
     margin-left: 2%;
 }
 
+.title-category {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.round-category {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.round-category:hover {
+    transform: scale(1.05);
+}
+
+.round-category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-cat{
+    margin-left: 5%;
+}
+
 
 /*ESTILOS PARA EL CATALOGO*/
 .catalog{
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 8%;
     display:grid;
     gap: 1rem;
     grid-template-columns: repeat(3,1fr);

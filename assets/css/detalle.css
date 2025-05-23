@@ -122,10 +122,25 @@ body {
     align-items: center;
     gap: 5px;
 }
+
 .other-options img {
     width: 30px;
     height: 30px;
+    transform: scale(1); 
+    filter: brightness(1); 
 }
+
+.other-options img:hover {
+    transform: scale(1.5); 
+    filter: brightness(0.8); 
+    filter: hue-rotate(50%);
+}
+
+.other-options img:active {
+    transform: scale(1); 
+    filter: brightness(1); 
+}
+
 
 .options p {
     font-size: 10px;
@@ -150,6 +165,8 @@ body {
 .movies-in{
     margin-bottom: 25%;
 }
+
+/*PAntalals grandes*/
 
 @media (min-width: 768px) {
     .background-vid {
